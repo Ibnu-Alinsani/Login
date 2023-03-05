@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .body {
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        width: 100%;
+        max-width: 480px;
+    }
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-weight: 900;
+    color: white;
+    background-image: url(img/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 450px;
+    border-radius: 5px 50px;
+    transition: .3s ease;
+    backdrop-filter: blur(5px);
+}
+
+section:hover {
+    box-shadow: 0 0 10px rgba(0,0,0, 1);
+}
+
+.form-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.header {
+    position: absolute;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.header p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 14px;
+}
+
+.header p a {
+    text-decoration: none;
+    color: white;
+    transition: text-decoration .3s;
+}
+
+.header p a:hover {
+    text-decoration: underline;
+}
+
+.header h2 {
+    text-decoration: none;
+    font-size: 22px;
+    transition: all text-decoration .3s;
+}
+
+.header h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background-color: lightskyblue;
+    transition: all .3s;
+    transform: translateX(-50%);
+}
+
+section:hover > .header > h2::after {
+    text-decoration: underline;
+    width: 50%;
+}
+
+
+.form-box .input-box {
+    width: 340px;
+    height: 50px;    
+    border: 3px solid white;
+    position: relative;
+    margin: 20px 0 ;
+    padding: 10px 0;
+    border-radius: 3px 3px 50px 3px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 900;
+    padding-left: 10px;
+    width: 90%;
+}
+
+::placeholder {
+    color: white;
+}
+
+input[type="text"], input[type="password"] {
+    color: white;
+    letter-spacing: 3px;
+    transition: font-size .5s ease-in-out;
+}
+
+input[type="password"]:focus {
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -10px 6px 0;
+}
+
+.checkbox input {
+    margin-right: 3px;
+    outline: none;
+}
+.checkbox a {
+    color: white;
+    text-decoration: none;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 340px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 30px 5px 30px 5px;
+    border: none;
+    font-weight: 900;
+    transition: .2s ease;
+    letter-spacing: 3px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px rgba(0,0,0, 1);
+
+}
+
+.sign-up {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: text-decoration .3s;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
